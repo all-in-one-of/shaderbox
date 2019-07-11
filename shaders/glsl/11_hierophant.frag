@@ -32,13 +32,13 @@ void main(){
 
     // 階段パターンを作成します
     color += fill(rect, .65);
-    color *= step(.25, fract(cross *4.));
+    color *= step(.75, fract(cross *2.));
     
     // ブラッククロスを埋める
-    color *= step(1.,cross);
+    // color *= step(1.,cross);
     
     // 白い十字を作成します
-    color += fill(cross, .65);
+    // color += fill(cross, .65);
     
     // インナーボックスの輪郭を作成します
     color += stroke (rect, .65, .05);
